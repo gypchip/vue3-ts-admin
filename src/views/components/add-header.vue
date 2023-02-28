@@ -1,3 +1,11 @@
+<!--
+ * @Description: 
+ * @Version: 3.0
+ * @Author: ganyanping
+ * @Date: 2022-12-26 16:59:16
+ * @LastEditors: ganyanping
+ * @LastEditTime: 2023-02-28 14:46:45
+-->
 <template>
   <div class="title">
     <div class="left">
@@ -26,6 +34,7 @@ export default defineComponent({
   justify-content: space-between;
   padding-bottom: 7px;
   padding-left: 16px;
+  border-bottom: 1px solid rgb(248, 248, 250);
   position: relative;
   line-height: 23px;
   .left {

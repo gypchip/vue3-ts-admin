@@ -4,7 +4,7 @@
  * @Author: ganyanping
  * @Date: 2022-10-26 10:20:06
  * @LastEditors: ganyanping
- * @LastEditTime: 2022-11-30 15:08:54
+ * @LastEditTime: 2023-02-28 14:50:19
 -->
 <template>
   <div class="common-layout">
@@ -78,10 +78,10 @@ export default defineComponent({
   padding: 16px;
 }
 .container {
-  background-color: #fff;
+  /* background-color: #fff; */
   height: 100%;
   width: 100%;
-  padding: 16px;
+  /* padding: 16px; */
   border-radius: 8px;
   border: 1px solid #F2F6FC;
 }
