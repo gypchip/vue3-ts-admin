@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>添加</title>
+    <g id="线索评级" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="评级规则-新增" transform="translate(-886.000000, -577.000000)">
+            <g id="添加" transform="translate(886.000000, 577.000000)">
+                <rect id="路径" x="0" y="0" width="16" height="16"></rect>
+                <path d="M0,16 L16,16 L16,0 L0,0 L0,16 Z" id="路径"></path>
+                <path d="M8,0 C12.42,0 16,3.58 16,8 C16,12.42 12.42,16 8,16 C3.58,16 0,12.42 0,8 C0,3.58 3.58,0 8,0 Z M8,1.39999998 C4.35319864,1.39999998 1.39999998,4.35319864 1.39999998,8 C1.39999998,11.6468014 4.35319864,14.6 8,14.6 C11.6468014,14.6 14.6,11.6468014 14.6,8 C14.6,4.35319864 11.6468014,1.39999998 8,1.39999998 Z" id="路径" fill="currentColor" fill-rule="nonzero"></path>
+                <path d="M4,7.2 L4,8.8 L7.2,8.8 L7.2,12 L8.8,12 L8.8,8.8 L12,8.8 L12,7.2 L8.8,7.2 L8.8,4 L7.2,4 L7.2,7.2 L4,7.2 Z" id="路径" fill="currentColor"></path>
+            </g>
+        </g>
+    </g>
+</svg>
