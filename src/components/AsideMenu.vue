@@ -1,6 +1,14 @@
+<!--
+ * @Description: 
+ * @Version: 3.0
+ * @Author: ganyanping
+ * @Date: 2022-11-21 16:43:14
+ * @LastEditors: ganyanping
+ * @LastEditTime: 2023-03-07 11:46:45
+-->
 <template>
   <div class="aside">
-    <div class="logo">营销数据中台</div>
+    <div class="logo">深入学习Vue3+Ts</div>
     <ul >
       <li v-for="menu in menuList" :key="menu.path" @click="goPage(menu.path)">{{menu.name}}</li>
     </ul>
@@ -40,8 +48,10 @@ export default defineComponent({
 .aside {
   padding: 16px;
   box-sizing: border-box;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   background: linear-gradient(143deg, #063153 0%, #6A8DA6 67%, #5D82A3 92%, #224967 100%);
+  overflow: auto;
 }
 ul li {
   list-style: none;

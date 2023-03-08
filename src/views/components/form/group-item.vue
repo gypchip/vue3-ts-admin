@@ -1,7 +1,15 @@
+<!--
+ * @Description: 
+ * @Version: 3.0
+ * @Author: ganyanping
+ * @Date: 2022-12-26 16:58:31
+ * @LastEditors: ganyanping
+ * @LastEditTime: 2023-03-06 18:27:44
+-->
 <template>
   <div class="form-col">
    <el-form-item label="人群" prop="crowds">
-      <div style="display: flex;">
+      <div style="display: flex;margin-left: 28px">
         <el-form-item ref="typeRule" class="form-item with120">
           <el-select v-model="data.type">
             <el-option label="全部用户" :value="0"></el-option>

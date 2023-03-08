@@ -1,16 +1,24 @@
 <template>
-  <svg :class="svgClass" aria-hidden="true" v-on="$listeners">
-      <use :xlink:href="iconName" />
+  <div
+    v-if="isOnlineSvg"
+    :style="{'--svg-icon-url': `url(${iconClass})`}"
+    class="svg-icon svg-icon-online"
+    :class="className"/>
+  <svg v-else class="svg-icon" :class="className" aria-hidden="true">
+      <use :xlink:href="`#icon-${iconClass}`" />
   </svg>
 </template>
 
-<script lang="ts" setup name="SvgIcon">
+<script name="SvgIcon" lang="ts"  setup >
+import { computed } from "vue"
 interface Props {
   iconClass: string
-  className: string
+  className?: string
 }
-const { svgClass } = defineProps<Props>();
-
+const { iconClass,  className} = defineProps<Props>();
+// 判断是否是在线图标
+const isOnlineSvg = computed(()=>/^(https?:)/.test(iconClass))
+// console.log(iconClass)
 </script>
 
 <style scoped>
@@ -22,9 +30,12 @@ const { svgClass } = defineProps<Props>();
   overflow: hidden;
   box-sizing: content-box;
 }
-.svg-external-icon {
-  background-color: currentColor;
-  mask-size: cover!important;
+.svg-icon-online {
+  background: currentColor;
+  mask-image: var(--svg-icon-url);
+  -webkit-mask-image:var(--svg-icon-url);
+  mask-size: cover;
+  -webkit-mask-size: cover;
   display: inline-block;
 }
 </style>
