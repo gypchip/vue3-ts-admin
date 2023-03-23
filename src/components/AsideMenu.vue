@@ -4,7 +4,7 @@
  * @Author: ganyanping
  * @Date: 2022-11-21 16:43:14
  * @LastEditors: ganyanping
- * @LastEditTime: 2023-03-07 11:46:45
+ * @LastEditTime: 2023-03-13 10:11:53
 -->
 <template>
   <div class="aside">
@@ -25,7 +25,7 @@ export default defineComponent({
     const route = useRoute();
     const menuList = reactive([
       { name: "分析看板", path: "/" },
-      { name: "归因分析", path: "/analysis-ascribe" },
+      { name: "图表分析", path: "/analysis-ascribe" },
     ])
     const goPage = function (path: string) {
       router.push({ path });
